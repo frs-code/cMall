@@ -1,0 +1,65 @@
+/*下拉菜单*/
+.drop-down{
+    position: relative;
+}
+.drop-down-toggle{
+    position: relative;
+    z-index: 2;
+}
+.drop-icon{
+    display: inline-block;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.drop-down-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.drop-down-left{
+    left: 0;
+    right: auto;
+}
+.drop-down-right{
+    right: 0;
+    left: auto;
+}
+/*menu dropdown*/
+.menu .drop-down-toggle{
+    display: block;
+    height: 100%;
+    padding: 0 16px 0 12px;
+    border-left: 1px solid #f3f5f7;
+    border-right: 1px solid #f3f5f7;
+}
+.menu .drop-icon{
+    width: 8px;
+    height: 6px;
+    background-image: url("../img/dropdown-arrow.png");
+}
+.menu .drop-down-content{
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #cdd0d4;
+}
+.menu-item{
+    line-height: 20px;
+}
+.menu-item:hover{
+    background-color: #f3f5f7;
+}
+.menu-active .drop-down-toggle,
+.menu.drop-down:hover .drop-down-toggle{
+    background-color: #fff;
+    border-color: #cdd0d4;
+}
+
+.menu-active .drop-icon,
+.menu.drop-down:hover .drop-icon{
+    background-image: url("../img/dropdown-arrow-active.png");
+}
+.menu-active .drop-down-content,
+.menu.drop-down:hover .drop-down-content{
+    display: block;
+}

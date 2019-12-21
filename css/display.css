@@ -1,0 +1,18 @@
+/*显示隐藏*/
+.fadeOut{
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+.transition{
+    transition: all .8s linear;
+}
+.slideUpDown{
+    height: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.slideLeftRight{
+    width: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

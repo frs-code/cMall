@@ -1,0 +1,55 @@
+a.link { /*链接正常颜色*/
+    color: #4d555d;
+}
+a.link:hover {   /*链接经过颜色*/
+    color: #f01414 !important;
+}
+/*加载动画*/
+.loading{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    /*border-left: 2px solid #f01414;*/
+    border-color: #f01414;
+    animation: rotateLoading .5s linear infinite;
+}
+@keyframes rotateLoading {
+    0% {
+        border-left: 2px solid #f01414;
+    }
+    33% {
+        border-top: 2px solid #f01414;
+    }
+    66% {
+        border-right: 2px solid #f01414;
+    }
+    100% {
+        border-bottom: 2px solid #f01414;
+    }
+}
+/*文字缩进隐藏*/
+.text-indent{
+    text-indent: -9999px;
+    overflow: hidden;
+}
+/*文字省略*/
+.text-ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*文本不可选*/
+.use-select{
+    cursor: default;
+    user-select: none;
+}
+/*过渡*/
+.transition{
+    transition: all .2s ease;
+}
