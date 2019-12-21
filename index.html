@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
+<script src="js/jquery.js"></script>
+<script>
+    function loadImage(){
+        console.log(this);
+       $('img').css({
+           "display":"inline-block"
+       })
+    }
+</script>
 <!--站点导航-->
     <nav class="nav-site">
         <div class="container cf">
@@ -424,7 +433,7 @@
             <div class="banner slider">
                 <div class="slider-container">
                     <div class="fade-item item">
-                        <a href="#" target="_blank"><img src="./img/focus-slider/2.png" alt=""/></a>
+                        <a href="#" target="_blank"><img onload="loadImage()" src="./img/focus-slider/2.png" alt=""/></a>
                     </div>
                     <div class="fade-item item">
                         <a href="#" target="_blank"><img src="./img/focus-slider/3.png" alt=""/></a>
@@ -2768,7 +2777,6 @@
             <span class="toolbar-text transition">顶部</span>
         </a>
     </div>
-    <script src="js/jquery.js"></script>
     <script src="js/search.js"></script>
     <script src="js/banner.js"></script>
     <script src="js/today.js"></script>

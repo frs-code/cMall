@@ -147,6 +147,7 @@ D:\Desktop\myMall\css>"node"  "C:\Users\Administrator\AppData\Roaming\npm\\node_
   position: absolute;
   top: 100%;
   left: 0;
+  z-index: 5;
   width: 100%;
   background-color: #fff;
   border: 1px solid #cfd2d5;
