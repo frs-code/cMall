@@ -98,7 +98,7 @@
         var html = '';
         for (var i = 0, len = Arr.length; i < len; i++) {
             html += ` <li class="cart-item">
-                            <a href="###" target="_blank" class="cart-item-pic "><img src=${Arr[i].url} alt="" /></a>
+                            <a href="###" target="_blank" class="cart-item-pic "><img style="display:block" src=${Arr[i].url}/></a>
                             <div class="cart-item-right">
                                 <p class="cart-item-name text-ellipsis"><a href="###" target="_blank" class="link">${Arr[i].name}</a></p>
                                 <p class="cart-item-price"><strong>${Arr[i].price} x ${Arr[i].num}</strong></p>
