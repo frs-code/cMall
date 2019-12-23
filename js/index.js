@@ -2212,3 +2212,64 @@ $('#backToTop').on('click',()=>{
     })();
 });
 
+//电梯
+($=>{
+    var $elevator=$("#elevator");
+    var $elevatorItem = $('.elevator-item');
+    var $floor = document.getElementsByClassName("floor");
+    function getFloor(){
+        var t = document.documentElement.scrollTop || document.body.scrollTop;
+        var floor = -1;
+        if(t<505){
+            floor = -1;
+        }
+        if(t>505){
+            floor = 0;
+        }
+        if(t>1325){
+            floor = 1;
+        }
+        if(t>1825){
+            floor = 2;
+        }
+        if(t>2325){
+            floor = 3;
+        }
+        if(t>2910){
+            floor = 4;
+        }
+        return floor;
+    }
+
+    function showElevator(){
+        var floor = getFloor();
+        if(floor==-1){
+            $elevator.css({
+                "display":"none"
+            })
+        }else{
+            $elevator.css({
+                "display":"block"
+            })
+        }
+        $elevatorItem.removeClass('elevator-active');
+        $elevatorItem.eq(floor).addClass('elevator-active');
+    }
+    showElevator();
+    window.onscroll=function(){
+        showElevator();
+    };
+    $elevatorItem.hover(function(){
+        $elevatorItem.removeClass('elevator-active');
+        $(this).addClass('elevator-active');
+    },showElevator);
+    $elevatorItem.on('click',function(){
+        var index = $(this).index();
+        var top =$floor[index].offsetTop;
+        top = top - 175;
+        requestAnimationFrame(scroll);
+        function scroll(){
+            window.scrollTo (0,top);
+        }
+    })
+})(jQuery);

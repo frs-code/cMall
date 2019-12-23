@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   .container{
-    width: 80%;
+    width: 1200px;
     min-width: 1200px;
     height: 44px;
     line-height: 44px;
@@ -102,7 +102,7 @@
   justify-content: center;
   .container{
     position: relative;
-    width: 80%;
+    width: 1200px;
     min-width: 1200px;
     display: flex;
     align-items: center;
@@ -282,7 +282,7 @@
   display: flex;
   justify-content: center;
   .container{
-    width: 80%;
+    width: 1200px;
     min-width: 1200px;
     display: flex;
     align-items: center;
@@ -309,7 +309,7 @@
   .container{
     position: relative;
     display: flex;
-    width: 80%;
+    width: 1200px;
     min-width: 1200px;
     .category{
       position: relative;
@@ -474,7 +474,7 @@
   justify-content: center;
   .today-container{
     position: relative;
-    width: 80%;
+    width: 1200px;
     min-width: 1200px;
     height: 158px;
     overflow: hidden;
@@ -505,7 +505,7 @@
   justify-content: center;
   .container{
     position: relative;
-    width: 80%;
+    width: 1200px;
     min-width: 1200px;
     .floor-head{
       display: flex;
@@ -605,7 +605,7 @@
   display: flex;
   justify-content: center;
   .container{
-    width: 80%;
+    width: 1200px;
     min-width: 1200px;
     border-top: 1px solid #cfd2d5;
     display: flex;
@@ -648,7 +648,7 @@
   display: flex;
   justify-content: center;
   .container{
-    width: 80%;
+    width: 1200px;
     min-width: 1200px;
     display: flex;
     flex-wrap: wrap;
@@ -711,6 +711,50 @@
     &:hover .toolbar-text{
       visibility: visible;
       right: 40px;
+    }
+  }
+}
+
+/*电梯*/
+.elevator{
+  display: none;
+  position: fixed;
+  left: 2px;
+  top: 50%;
+  padding: 0 10px;
+  background-color: transparent;
+  transform: translateY(-50%);
+  .elevator-item{
+    display: block;
+    width: 24px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #4d555d;
+    border-top: 1px solid #d9dde1;
+    .elevator-num{
+
+    }
+    .elevator-text{
+      display: none;
+    }
+    &:hover{
+      color: #f01414;
+    }
+    &:hover .elevator-num{
+      display: none;
+    }
+    &:hover .elevator-text{
+      display: block;
+    }
+  }
+  .elevator-active{
+    color: #f01414;
+    .elevator-num{
+      display: none;
+    }
+    .elevator-text{
+      display: block;
     }
   }
 }

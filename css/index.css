@@ -1,5 +1,3 @@
-
-D:\Desktop\cMall\css>"node"  "C:\Users\Administrator\AppData\Roaming\npm\\node_modules\less\bin\lessc" --no-color index.less 
 /*=========站点导航样式=========*/
 .nav-site {
   width: 100%;
@@ -10,7 +8,7 @@ D:\Desktop\cMall\css>"node"  "C:\Users\Administrator\AppData\Roaming\npm\\node_m
   justify-content: center;
 }
 .nav-site .container {
-  width: 80%;
+  width: 1200px;
   min-width: 1200px;
   height: 44px;
   line-height: 44px;
@@ -100,7 +98,7 @@ D:\Desktop\cMall\css>"node"  "C:\Users\Administrator\AppData\Roaming\npm\\node_m
 }
 .header .container {
   position: relative;
-  width: 80%;
+  width: 1200px;
   min-width: 1200px;
   display: flex;
   align-items: center;
@@ -281,7 +279,7 @@ D:\Desktop\cMall\css>"node"  "C:\Users\Administrator\AppData\Roaming\npm\\node_m
   justify-content: center;
 }
 .nav-main .container {
-  width: 80%;
+  width: 1200px;
   min-width: 1200px;
   display: flex;
   align-items: center;
@@ -307,7 +305,7 @@ D:\Desktop\cMall\css>"node"  "C:\Users\Administrator\AppData\Roaming\npm\\node_m
 .focus .container {
   position: relative;
   display: flex;
-  width: 80%;
+  width: 1200px;
   min-width: 1200px;
 }
 .focus .container .category {
@@ -471,7 +469,7 @@ D:\Desktop\cMall\css>"node"  "C:\Users\Administrator\AppData\Roaming\npm\\node_m
 }
 .today .today-container {
   position: relative;
-  width: 80%;
+  width: 1200px;
   min-width: 1200px;
   height: 158px;
   overflow: hidden;
@@ -501,7 +499,7 @@ D:\Desktop\cMall\css>"node"  "C:\Users\Administrator\AppData\Roaming\npm\\node_m
 }
 .floor .container {
   position: relative;
-  width: 80%;
+  width: 1200px;
   min-width: 1200px;
 }
 .floor .container .floor-head {
@@ -599,7 +597,7 @@ D:\Desktop\cMall\css>"node"  "C:\Users\Administrator\AppData\Roaming\npm\\node_m
   justify-content: center;
 }
 .footer .container {
-  width: 80%;
+  width: 1200px;
   min-width: 1200px;
   border-top: 1px solid #cfd2d5;
   display: flex;
@@ -642,7 +640,7 @@ D:\Desktop\cMall\css>"node"  "C:\Users\Administrator\AppData\Roaming\npm\\node_m
   justify-content: center;
 }
 .bottom .container {
-  width: 80%;
+  width: 1200px;
   min-width: 1200px;
   display: flex;
   flex-wrap: wrap;
@@ -706,4 +704,44 @@ D:\Desktop\cMall\css>"node"  "C:\Users\Administrator\AppData\Roaming\npm\\node_m
 .toolbar .toolbar-item:hover .toolbar-text {
   visibility: visible;
   right: 40px;
+}
+/*电梯*/
+.elevator {
+  display: none;
+  position: fixed;
+  left: 2px;
+  top: 50%;
+  padding: 0 10px;
+  background-color: transparent;
+  transform: translateY(-50%);
+}
+.elevator .elevator-item {
+  display: block;
+  width: 24px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #4d555d;
+  border-top: 1px solid #d9dde1;
+}
+.elevator .elevator-item .elevator-text {
+  display: none;
+}
+.elevator .elevator-item:hover {
+  color: #f01414;
+}
+.elevator .elevator-item:hover .elevator-num {
+  display: none;
+}
+.elevator .elevator-item:hover .elevator-text {
+  display: block;
+}
+.elevator .elevator-active {
+  color: #f01414;
+}
+.elevator .elevator-active .elevator-num {
+  display: none;
+}
+.elevator .elevator-active .elevator-text {
+  display: block;
 }
